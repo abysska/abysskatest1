@@ -12,11 +12,13 @@ public class Birdscript : MonoBehaviour
     public LogicScript logic;
     public bool birdIsAlive = true;
     public GameObject blood;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+       
     }
 
     // Update is called once per frame
@@ -34,18 +36,14 @@ public class Birdscript : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-      
         
-            
         logic.gameOver();
         birdIsAlive = false;
+        Instantiate(blood, transform.position, Quaternion.identity);
+
     }
 
-    
 }
-//ei toimi jostain syystä: jos laittaa priv void collisioon niiin gameover hajoaa
-// Instantiate(blood, transform.position, Quaternion.identity);
-//Destroy(blood); ei tarvi
 
 
 
