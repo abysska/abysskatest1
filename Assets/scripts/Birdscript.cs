@@ -1,6 +1,8 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using static Unity.Collections.AllocatorManager;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class Birdscript : MonoBehaviour
 {
@@ -27,17 +29,20 @@ public class Birdscript : MonoBehaviour
 
         }
 
+        
+  
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
-
     {
 
-        Instantiate (blood, transform.position, Quaternion.identity);
         logic.gameOver();
         birdIsAlive = false;
     }
-    
 
+    // Instantiate(blood, transform.position, Quaternion.identity);
 }
+
+
 
 
