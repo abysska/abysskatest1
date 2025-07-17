@@ -29,19 +29,23 @@ public class Birdscript : MonoBehaviour
 
         }
 
-        
   
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
+      
+        
+            
         logic.gameOver();
         birdIsAlive = false;
     }
 
-    // Instantiate(blood, transform.position, Quaternion.identity);
+    
 }
+//ei toimi jostain syystä: jos laittaa priv void collisioon niiin gameover hajoaa
+// Instantiate(blood, transform.position, Quaternion.identity);
+//Destroy(blood); ei tarvi
 
 
 
