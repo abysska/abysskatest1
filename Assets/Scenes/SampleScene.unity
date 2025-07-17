@@ -2207,6 +2207,10 @@ PrefabInstance:
       value: BloodSplash
       objectReference: {fileID: 0}
     - target: {fileID: 350435851742769236, guid: 6a19382e402a8a947a2de6d96b41966d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 350435851742769236, guid: 6a19382e402a8a947a2de6d96b41966d, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
