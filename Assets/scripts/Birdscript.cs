@@ -30,8 +30,9 @@ public class Birdscript : MonoBehaviour
             myRigidbody.linearVelocity = Vector2.up * flapStrenght;
 
         }
+        else
+        { myRigidbody.angularVelocity = 0f;}
 
-  
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -40,7 +41,7 @@ public class Birdscript : MonoBehaviour
         logic.gameOver();
         birdIsAlive = false;
         Instantiate(blood, transform.position, Quaternion.identity);
-
+        
     }
 
 }
