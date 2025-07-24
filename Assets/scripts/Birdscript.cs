@@ -12,6 +12,10 @@ public class Birdscript : MonoBehaviour
     public LogicScript logic;
     public bool birdIsAlive = true;
     public GameObject blood;
+    public AudioSource Wings;
+    public AudioSource RockContact;
+    public AudioSource Splash;
+    public AudioSource Hurtsound;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,7 +45,10 @@ public class Birdscript : MonoBehaviour
         logic.gameOver();
         birdIsAlive = false;
         Instantiate(blood, transform.position, Quaternion.identity);
-        
+        AudioManager.Instance.PlaySFX("Hurtsound");
+        AudioManager.Instance.PlaySFX("RockContact");
+        AudioManager.Instance.PlaySFX("Splash");
+
     }
 
 }
