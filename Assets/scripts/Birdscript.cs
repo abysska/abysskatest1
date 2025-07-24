@@ -17,6 +17,7 @@ public class Birdscript : MonoBehaviour
     public AudioSource Splash;
     public AudioSource Hurtsound;
     
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,7 +49,7 @@ public class Birdscript : MonoBehaviour
         AudioManager.Instance.PlaySFX("Hurtsound");
         AudioManager.Instance.PlaySFX("RockContact");
         AudioManager.Instance.PlaySFX("Splash");
-
+        
     }
 
 }

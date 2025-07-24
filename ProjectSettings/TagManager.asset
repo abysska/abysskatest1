@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Logic
   - pipe
+  - Pipe2
   layers:
   - Default
   - TransparentFX
