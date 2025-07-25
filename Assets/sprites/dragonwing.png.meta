@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dragonwing_0: 8769914492962436015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

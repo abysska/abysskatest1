@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dragonsmaragd_0: -4652852721885053551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
