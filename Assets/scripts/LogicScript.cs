@@ -10,7 +10,7 @@ public class LogicScript : MonoBehaviour
     public int scoreIncreaseTreshold = 10; 
     public Text scoreText;
     public GameObject gameOverScreen;
-    //public PipeSpawnScript pipeSpawnScript;
+   
 
     [ContextMenu("Increase Score")]
 
@@ -22,21 +22,6 @@ public class LogicScript : MonoBehaviour
 
 
 
-//    void Start()
-    
-  //     pipeSpawnScript  = GameObject.FindGameObjectWithTag("Pipe2").GetComponent<PipeSpawnScript>();
-
-    
-
-
-  //  void Update()
-    //{ 
-      //  if 
-        //    (playerScore > scoreIncreaseTreshold)
-       
-            
-   // }
-         
 
 
 
@@ -48,6 +33,6 @@ public class LogicScript : MonoBehaviour
     public void gameOver()
     {
         gameOverScreen.SetActive(true);
-
+       
     }
 }
